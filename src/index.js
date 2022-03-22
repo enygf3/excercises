@@ -9,6 +9,7 @@ import alphabetized from "./components/string-functions/alphabetized/alphabetize
 import countDuplicates from "./components/string-functions/countDuplicates/countDuplicates";
 import flattenAndSort from "./components/algorithm-functions/flattenAndSort/flattenAndSort";
 import add from "./components/algorithm-functions/add/add";
+import multiplyAll from "./components/algorithm-functions/multiplyAll/multiplyAll";
 
 console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
@@ -21,3 +22,4 @@ console.log(countDuplicates("indivisibility"));
 console.log(flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]));
 const addThree = add(3);
 console.log(addThree(3));
+console.log(multiplyAll([1, 2, 3], 2));
