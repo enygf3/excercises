@@ -1,4 +1,3 @@
-import "./styles/main.sass";
 import sumAverage from "./components/arr-functions/sumAverage/sumAverage";
 import maxTripletSum from "./components/arr-functions/maxTripletSum/maxTripletSum";
 import biggest from "./components/arr-functions/biggest/biggest";
@@ -11,6 +10,9 @@ import flattenAndSort from "./components/algorithm-functions/flattenAndSort/flat
 import add from "./components/algorithm-functions/add/add";
 import multiplyAll from "./components/algorithm-functions/multiplyAll/multiplyAll";
 import uniqueSum from "./components/algorithm-functions/uniqueSum/uniqueSum";
+import reduce from "./components/algorithm-functions/reduce/reduce";
+import spread from "./components/algorithm-functions/spread/spread";
+import zipWith from "./components/algorithm-functions/zipWith/zipWith";
 
 console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
@@ -25,3 +27,6 @@ const addThree = add(3);
 console.log(addThree(3));
 console.log(multiplyAll([1, 2, 3], 2));
 console.log(uniqueSum([1, 3, 8, 1, 8]));
+// console.log(reduce([1, 2, 3, 4], (acc, value) => acc * value, 1));
+spread((a) => console.log(a), [1, 2, 3]);
+console.log(zipWith(Math.pow, [10, 10, 10, 10], [0, 1, 2, 3]));
