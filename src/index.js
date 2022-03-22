@@ -13,6 +13,7 @@ import uniqueSum from "./components/algorithm-functions/uniqueSum/uniqueSum";
 import reduce from "./components/algorithm-functions/reduce/reduce";
 import spread from "./components/algorithm-functions/spread/spread";
 import zipWith from "./components/algorithm-functions/zipWith/zipWith";
+import sequenceSum from "./components/recursion/sequnceSum/sequanceSum";
 
 console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
@@ -30,3 +31,4 @@ console.log(uniqueSum([1, 3, 8, 1, 8]));
 // console.log(reduce([1, 2, 3, 4], (acc, value) => acc * value, 1));
 spread((a) => console.log(a), [1, 2, 3]);
 console.log(zipWith(Math.pow, [10, 10, 10, 10], [0, 1, 2, 3]));
+console.log(sequenceSum(1, 5, 1));
