@@ -3,7 +3,7 @@ const toMachineName = (name, separator) => {
 
 	newName = name.split(" ");
 	newName = newName.join(separator).toLowerCase();
-	newName = newName.replace(/[,%]/g, "");
+	newName = newName.replace(/[.!?,%]/g, "");
 
 	return name.search(/[0-9]/g) != 0
 		? newName
