@@ -18,6 +18,7 @@ import objectSort from "./components/sort/objectSort/objectSort";
 import Singleton from "./components/classes/singleton/singleton";
 import CustomUpperCase from "./components/classes/customUpperCase/customUpperCase";
 import romanToNumber from "./components/string-functions/romanToNumber/romanToNumber";
+import stringify from "./components/recursion/stringify/stringify";
 
 console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
@@ -54,3 +55,14 @@ let s = new Singleton();
 s.name = "qwe";
 let x = new Singleton();
 console.log(s === x);
+
+class Node {
+	constructor(data, next = null) {
+		this.data = data;
+		this.next = next;
+	}
+}
+
+console.log(
+	stringify(new Node(0, new Node(1, new Node(4, new Node(9, new Node(16))))))
+);
