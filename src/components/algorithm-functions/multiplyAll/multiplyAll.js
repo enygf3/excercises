@@ -1,9 +1,9 @@
 const multiplyAll = (arr, mult) => {
 	let newArr = [];
 
-	for (let el of arr) {
+	arr.forEach((item) => {
 		newArr.push(el * mult);
-	}
+	});
 
 	return newArr;
 };
