@@ -19,6 +19,7 @@ import Singleton from "./components/classes/singleton/singleton";
 import CustomUpperCase from "./components/classes/customUpperCase/customUpperCase";
 import romanToNumber from "./components/string-functions/romanToNumber/romanToNumber";
 import stringify from "./components/recursion/stringify/stringify";
+import compose from "./components/algorithm-functions/compose/compose";
 
 console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
@@ -66,3 +67,19 @@ class Node {
 console.log(
 	stringify(new Node(0, new Node(1, new Node(4, new Node(9, new Node(16))))))
 );
+
+function plus2(arg) {
+	return arg + 2;
+}
+
+function minus2(arg) {
+	return arg - 2;
+}
+
+function divide2(arg) {
+	return arg / 2;
+}
+
+let arg = 5;
+
+console.log(compose(arg, plus2, minus2, divide2));
