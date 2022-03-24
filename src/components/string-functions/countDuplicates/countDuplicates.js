@@ -3,25 +3,27 @@ const countDuplicates = (text) => {
 	let arr = [];
 	let count = 0;
 
-	for (let i = 0; i < str.length; i++) {
+	str.split("").forEach((item) => {
 		let count = 0;
-		for (let k = 1; k < str.length; k++) {
-			if (str[i] == str[k] && !arr.includes(str[k])) {
-				count = 1;
+		str.split("").forEach((element, index) => {
+			if (index >= 1) {
+				if (item == element && !arr.includes(element)) {
+					count = 1;
+				}
 			}
-		}
+		});
 
 		if (count) {
-			arr.push(str[i]);
+			arr.push(item);
 		}
-	}
+	});
 
-	for (let el of arr) {
-		let num = str.split(el).length - 1;
+	arr.forEach((item) => {
+		let num = str.split(item).length - 1;
 		if (num >= 2) {
 			count++;
 		}
-	}
+	});
 
 	return count;
 };
