@@ -1,12 +1,12 @@
 const sumAverage = (...arr) => {
 	let value = 0;
 	let count = 0;
-	for (let el of arr) {
-		for (let val of el) {
-			value += val;
+	arr.forEach((item, index, arr) => {
+		item.forEach((el, index, arr) => {
+			value += el;
 			count++;
-		}
-	}
+		});
+	});
 
 	return Math.floor(value / count);
 };
