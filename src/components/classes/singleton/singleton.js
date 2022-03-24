@@ -1,6 +1,11 @@
 class Singleton {
-	constructor(name) {
-		this.name = name;
+	static instance;
+	constructor() {
+		if (!Singleton.instance) {
+			Singleton.instance = this;
+		} else {
+			return Singleton.instance;
+		}
 	}
 }
 
