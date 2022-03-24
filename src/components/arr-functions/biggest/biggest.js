@@ -1,9 +1,9 @@
 const biggest = (arr) => {
-	let newArr = arr.sort();
+	let newArr = arr.sort().reverse();
 	let str = "";
-	for (let i = newArr.length - 1; i >= 0; i--) {
-		str += newArr[i];
-	}
+	newArr.forEach((item) => {
+		str += item;
+	});
 
 	return str;
 };
