@@ -1,11 +1,11 @@
 const flattenAndSort = (arr) => {
 	let newArr = [];
 
-	for (let el of arr) {
-		for (let num of el) {
-			newArr.push(num);
-		}
-	}
+	arr.forEach((item) => {
+		item.forEach((el) => {
+			newArr.push(el);
+		});
+	});
 
 	return newArr.sort();
 };
