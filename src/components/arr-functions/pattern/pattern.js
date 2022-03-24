@@ -6,12 +6,15 @@ const pattern = (num) => {
 		str += i;
 	}
 
-	for (let i = num; i > 0; i--) {
-		let newStr = "";
-		newStr = str.substring(i, str.length);
-		newStr += str.substring(0, i);
-		arr.push(newStr);
-	}
+	str
+		.split("")
+		.reverse()
+		.forEach((item) => {
+			let newStr = "";
+			newStr = str.substring(item, str.length);
+			newStr += str.substring(0, item);
+			arr.push(newStr);
+		});
 
 	return arr;
 };
