@@ -1,17 +1,18 @@
 const maxTripletSum = (arr) => {
 	let newArr = [];
 	let maxArr = [];
-	for (let el of arr) {
-		newArr.push(el);
-	}
+	arr.forEach((item, index, arr) => {
+		newArr.push(item);
+	});
 
 	newArr = newArr.sort();
+	newArr = newArr.reverse();
 
-	for (let i = newArr.length - 1; i >= 0; i--) {
-		if (!maxArr.includes(newArr[i]) && maxArr.length != 3) {
-			maxArr.push(newArr[i]);
+	newArr.forEach((item, index, arr) => {
+		if (!maxArr.includes(item) && maxArr.length != 3) {
+			maxArr.push(item);
 		}
-	}
+	});
 
 	return maxArr[0] + maxArr[1] + maxArr[2];
 };
