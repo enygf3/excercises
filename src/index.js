@@ -15,6 +15,8 @@ import spread from "./components/algorithm-functions/spread/spread";
 import zipWith from "./components/algorithm-functions/zipWith/zipWith";
 import sequenceSum from "./components/recursion/sequnceSum/sequanceSum";
 import objectSort from "./components/sort/objectSort/objectSort";
+import Singleton from "./components/classes/singleton/singleton";
+import CustomUpperCase from "./components/classes/customUpperCase/customUpperCase";
 
 console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
@@ -44,3 +46,5 @@ console.log(
 		"a"
 	)
 );
+let str = new CustomUpperCase("abc");
+console.log(str.customUpperCase());
