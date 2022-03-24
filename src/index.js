@@ -17,6 +17,7 @@ import sequenceSum from "./components/recursion/sequnceSum/sequanceSum";
 import objectSort from "./components/sort/objectSort/objectSort";
 import Singleton from "./components/classes/singleton/singleton";
 import CustomUpperCase from "./components/classes/customUpperCase/customUpperCase";
+import romanToNumber from "./components/string-functions/romanToNumber/romanToNumber";
 
 console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
@@ -48,3 +49,4 @@ console.log(
 );
 let str = new CustomUpperCase("abc");
 console.log(str.customUpperCase());
+console.log(romanToNumber("MMXXII"));
