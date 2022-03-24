@@ -2,7 +2,7 @@ const multiplyAll = (arr, mult) => {
 	let newArr = [];
 
 	arr.forEach((item) => {
-		newArr.push(el * mult);
+		newArr.push(item * mult);
 	});
 
 	return newArr;
