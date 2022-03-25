@@ -1,5 +1,5 @@
 const reduce = (arr, callback, initialValue) => {
-  let value = 1;
+  let value;
 
   arr.forEach((item) => {
     value = callback(item, value);

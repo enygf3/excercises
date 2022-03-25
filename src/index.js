@@ -49,8 +49,7 @@ console.log(
     "a"
   )
 );
-let str = new CustomUpperCase("abc");
-console.log(str.customUpperCase());
+console.log("abc".customUpperCase());
 console.log(romanToNumber("MMXXII"));
 let s = new Singleton();
 s.name = "qwe";
