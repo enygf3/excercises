@@ -23,7 +23,7 @@ import compose from "./components/algorithm-functions/compose/compose";
 
 console.log(sumAverage([3, 8, 1], [4, 0, 3], [9, 3, 3]));
 console.log(maxTripletSum([1, 2, 3, 5, 5], 3));
-console.log(biggest([92, 0, 56, 1, 83]));
+console.log(biggest([3, 30, 34, 5, 9]));
 console.log(pattern(5));
 console.log(arithmeticSequenceSum(2, 3, 5));
 console.log(toMachineName("15334Hello. World", "-"));

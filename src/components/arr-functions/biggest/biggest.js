@@ -1,11 +1,8 @@
 const biggest = (arr) => {
-  let newArr = arr.sort().reverse();
-  let str = "";
-  newArr.forEach((item) => {
-    str += item;
-  });
-
-  return str;
+  return Array.from(arr.map((item) => item.toString()).join(""))
+    .sort()
+    .reverse()
+    .join("");
 };
 
 export default biggest;
