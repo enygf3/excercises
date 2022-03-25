@@ -1,19 +1,10 @@
-const maxTripletSum = (arr) => {
-  let newArr = [];
-  let maxArr = [];
-  arr.forEach((item) => {
-    newArr.push(item);
-  });
-
-  newArr = newArr.sort().reverse();
-
-  newArr.forEach((item) => {
-    if (!maxArr.includes(item) && maxArr.length != 3) {
-      maxArr.push(item);
-    }
-  });
-
-  return maxArr[0] + maxArr[1] + maxArr[2];
+const maxTripletSum = (arr, count) => {
+  return Array.from(new Set(arr.sort().reverse()))
+    .slice(0, count)
+    .reduce(
+      (previousValue, currentValue, index, array) =>
+        previousValue + currentValue
+    );
 };
 
 export default maxTripletSum;
