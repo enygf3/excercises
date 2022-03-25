@@ -1,18 +1,13 @@
 const objectSort = (list, sortBy) => {
-  let newArr = [];
-
-  list.forEach((element) => {
-    newArr.push(element);
+  return list.sort((a, b) => {
+    if (a[sortBy] < b[sortBy]) {
+      return 1;
+    }
+    if (a[sortBy] > b[sortBy]) {
+      return -1;
+    }
+    return 0;
   });
-  newArr.forEach((element, id, arr) => {
-    newArr.forEach((item, index) => {
-      if (item[sortBy] < element[sortBy]) {
-        [arr[id], arr[index]] = [arr[index], arr[id]];
-      }
-    });
-  });
-
-  return newArr;
 };
 
 export default objectSort;
