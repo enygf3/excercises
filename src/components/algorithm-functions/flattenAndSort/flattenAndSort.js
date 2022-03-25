@@ -1,13 +1,8 @@
 const flattenAndSort = (arr) => {
-  let newArr = [];
-
-  arr.forEach((item) => {
-    item.forEach((el) => {
-      newArr.push(el);
-    });
-  });
-
-  return newArr.sort();
+  return arr
+    .filter((item) => item.length != 0)
+    .flat()
+    .sort();
 };
 
 export default flattenAndSort;
