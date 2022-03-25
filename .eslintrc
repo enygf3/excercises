@@ -5,7 +5,8 @@
     "prettier/prettier": ["error"]
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true
   },
   "parserOptions": {
     "requireConfigFile": false
