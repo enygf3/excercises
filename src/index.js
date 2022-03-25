@@ -39,15 +39,15 @@ spread((a) => console.log(a), [1, 2, 3]);
 console.log(zipWith(Math.pow, [10, 10, 10, 10], [0, 1, 2, 3]));
 console.log(sequenceSum(1, 5, 1));
 console.log(
-	objectSort(
-		[
-			{ a: 1, b: 3 },
-			{ a: 3, b: 2 },
-			{ a: 2, b: 40 },
-			{ a: 4, b: 12 },
-		],
-		"a"
-	)
+  objectSort(
+    [
+      { a: 1, b: 3 },
+      { a: 3, b: 2 },
+      { a: 2, b: 40 },
+      { a: 4, b: 12 },
+    ],
+    "a"
+  )
 );
 let str = new CustomUpperCase("abc");
 console.log(str.customUpperCase());
@@ -58,26 +58,26 @@ let x = new Singleton();
 console.log(s === x);
 
 class Node {
-	constructor(data, next = null) {
-		this.data = data;
-		this.next = next;
-	}
+  constructor(data, next = null) {
+    this.data = data;
+    this.next = next;
+  }
 }
 
 console.log(
-	stringify(new Node(0, new Node(1, new Node(4, new Node(9, new Node(16))))))
+  stringify(new Node(0, new Node(1, new Node(4, new Node(9, new Node(16))))))
 );
 
 function plus2(arg) {
-	return arg + 2;
+  return arg + 2;
 }
 
 function minus2(arg) {
-	return arg - 2;
+  return arg - 2;
 }
 
 function divide2(arg) {
-	return arg / 2;
+  return arg / 2;
 }
 
 let arg = 5;

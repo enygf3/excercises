@@ -1,11 +1,14 @@
 const compose = (arg, ...props) => {
-	let arr = [...props];
-	let newArr = [];
-	arr.forEach((item) => {
-		newArr.push(item(arg));
-	});
+  let arr = [...props];
+  let value = 0;
+  // let newArr = [];
+  // arr.forEach((item) => {
+  // 	newArr.push(item(arg));
+  // });
 
-	return newArr;
+  value = arr.reduce((prev, curr) => curr(prev));
+
+  return value;
 };
 
 export default compose;

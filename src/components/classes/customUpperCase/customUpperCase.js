@@ -1,5 +1,5 @@
 export default class CustomUpperCase extends String {
-	customUpperCase() {
-		return this.toUpperCase();
-	}
+  customUpperCase() {
+    return this.toUpperCase();
+  }
 }
