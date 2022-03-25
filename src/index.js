@@ -21,7 +21,7 @@ import romanToNumber from "./components/string-functions/romanToNumber/romanToNu
 import stringify from "./components/recursion/stringify/stringify";
 import compose from "./components/algorithm-functions/compose/compose";
 
-console.log(sumAverage([1, 2, 3], [5, 1, 2], [9, 0, 0]));
+console.log(sumAverage([3, 8, 1], [4, 0, 3], [9, 3, 3]));
 console.log(maxTripletSum([1, 2, 3, 5, 5]));
 console.log(biggest([92, 0, 56, 1, 83]));
 console.log(pattern(5));
