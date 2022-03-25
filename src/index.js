@@ -26,7 +26,7 @@ console.log(maxTripletSum([1, 2, 3, 5, 5]));
 console.log(biggest([92, 0, 56, 1, 83]));
 console.log(pattern(5));
 console.log(arithmeticSequenceSum(2, 3, 5));
-console.log(toMachineName("Hello. World", "-"));
+console.log(toMachineName("15334Hello. World", "-"));
 console.log(alphabetized("Hello!!!!!!!!!!!!!!!!!!!!!!"));
 console.log(countDuplicates("indivisibility"));
 console.log(flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]));
