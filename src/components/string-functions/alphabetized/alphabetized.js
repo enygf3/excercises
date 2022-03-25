@@ -1,17 +1,12 @@
 const alphabetized = (text) => {
-  let newText = "";
-  newText = text
-    .split(" ")
-    .join("")
-    .replace(/[.!?,;:%]/g, "");
-
   const sortText = (str) =>
     str
+      .replace(/[.!?,;:%]/g, "")
       .split("")
       .sort((a, b) => a.localeCompare(b))
       .join("");
 
-  return sortText(newText);
+  return sortText(text);
 };
 
 export default alphabetized;
