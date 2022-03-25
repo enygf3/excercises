@@ -28,7 +28,7 @@ console.log(pattern(5));
 console.log(arithmeticSequenceSum(2, 3, 5));
 console.log(toMachineName("15334Hello. World", "-"));
 console.log(alphabetized("Hello!!!!!!!!!!!!!!!!!!!!!!"));
-console.log(countDuplicates("indivisibility"));
+console.log(countDuplicates("aA11"));
 console.log(flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]));
 const addThree = add(3);
 console.log(addThree(3));
