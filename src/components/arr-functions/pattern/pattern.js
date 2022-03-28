@@ -1,22 +1,15 @@
 const pattern = (num) => {
-  let arr = [];
-  let str = "";
-
-  for (let i = 1; i <= num; i++) {
-    str += i;
-  }
-
-  str
-    .split("")
-    .reverse()
-    .forEach((item) => {
-      let newStr = "";
-      newStr = str.substring(item, str.length);
-      newStr += str.substring(0, item);
-      arr.push(newStr);
+  let newArr = [];
+  Array.from(Array(num).keys())
+    .map((x) => (++x).toString())
+    .forEach((item, index, arr) => {
+      let str = "";
+      str =
+        arr.join("").substring(index, num) + arr.join("").substring(0, index);
+      newArr.push(str);
     });
 
-  return arr;
+  return newArr;
 };
 
 export default pattern;
