@@ -72,6 +72,4 @@ function divide2(arg) {
   return arg / 2;
 }
 
-let arg = 5;
-
-console.log(compose(arg, plus2, minus2, divide2));
+console.log(compose(plus2, minus2, divide2));
