@@ -1,5 +1,7 @@
 const biggest = (arr) => {
-  return Array.from(arr.map((item) => item.toString()).join(""))
+  return arr
+    .map((item) => item.toString())
+    .join("")
     .sort()
     .reverse()
     .join("");
