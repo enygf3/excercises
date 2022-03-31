@@ -16,7 +16,7 @@ import zipWith from "./components/high-order/zipWith/zipWith";
 import sequenceSum from "./components/recursion/sequnceSum/sequanceSum";
 import objectSort from "./components/sort/objectSort/objectSort";
 import Singleton from "./components/classes/singleton/singleton";
-import CustomUpperCase from "./components/classes/customUpperCase/customUpperCase";
+import "./components/classes/customUpperCase/customUpperCase";
 import romanToNumber from "./components/string-functions/romanToNumber/romanToNumber";
 import stringify, { Node } from "./components/recursion/stringify/stringify";
 import compose from "./components/algorithm-functions/compose/compose";
@@ -49,10 +49,11 @@ console.log(
     "a"
   )
 );
-console.log("abc".customUpperCase());
+
+console.log("abc"["customUpperCase"]());
 console.log(romanToNumber("MMXXII"));
 let s = new Singleton();
-s.name = "qwe";
+s["name"] = "qwe";
 let x = new Singleton();
 console.log(s === x);
 
