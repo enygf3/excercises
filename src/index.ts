@@ -29,7 +29,7 @@ console.log(arithmeticSequenceSum(2, 3, 5));
 console.log(toMachineName("15334Hello. World", "-"));
 console.log(alphabetized("Hello!!!!!!!!!!!!!!!!!!!!!!"));
 console.log(countDuplicates("aA11"));
-console.log(flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]));
+console.log(flattenAndSort([[], 98, 12, [44, 0], [345, 999, [1, 2, 3]]]));
 const addThree = add(3);
 console.log(addThree(3));
 console.log(multiplyAll([1, 2, 3], 2));
