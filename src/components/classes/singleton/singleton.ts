@@ -1,5 +1,5 @@
 class Singleton {
-  static instance;
+  static instance: any;
   constructor() {
     if (!Singleton.instance) {
       Singleton.instance = this;

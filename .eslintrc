@@ -2,7 +2,8 @@
   "parser": "@babel/eslint-parser",
   "rules": {
     "no-unused-vars": "off",
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "@typescript-eslint/ban-ts-comment": "off"
   },
   "env": {
     "browser": true,

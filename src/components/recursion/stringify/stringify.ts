@@ -1,11 +1,13 @@
 export class Node {
-  constructor(data, next = null) {
+  data: number;
+  next: any;
+  constructor(data: number, next: any = null) {
     this.data = data;
     this.next = next;
   }
 }
 
-const stringify = (props) => {
+const stringify = (props: any): any => {
   console.log(props.data);
   if (props.next) {
     return stringify(props.next);

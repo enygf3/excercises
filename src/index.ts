@@ -13,10 +13,10 @@ import uniqueSum from "./components/algorithm-functions/uniqueSum/uniqueSum";
 import reduce from "./components/algorithm-functions/reduce/reduce";
 import spread from "./components/high-order/spread/spread";
 import zipWith from "./components/high-order/zipWith/zipWith";
-import sequenceSum from "./components/recursion/sequnceSum/sequanceSum";
+import sequenceSum from "./components/recursion/sequenceSum/sequenceSum";
 import objectSort from "./components/sort/objectSort/objectSort";
 import Singleton from "./components/classes/singleton/singleton";
-import "./components/classes/customUpperCase/customUpperCase";
+import "./components/classes/customUpperCase/customUpperCase.ts";
 import romanToNumber from "./components/string-functions/romanToNumber/romanToNumber";
 import stringify, { Node } from "./components/recursion/stringify/stringify";
 import compose from "./components/algorithm-functions/compose/compose";
@@ -34,8 +34,8 @@ const addThree = add(3);
 console.log(addThree(3));
 console.log(multiplyAll([1, 2, 3], 2));
 console.log(uniqueSum([1, 3, 8, 1, 8]));
-console.log(reduce([1, 2, 3, 4], (acc, value) => acc * value, 1));
-spread((a) => console.log(a), [1, 2, 3]);
+console.log(reduce([1, 2, 3, 4], (acc: any, value: any) => acc * value, 1));
+spread((a: any) => console.log(a), [1, 2, 3]);
 console.log(zipWith(Math.pow, [10, 10, 10, 10], [0, 1, 2, 3]));
 console.log(sequenceSum(1, 5, 1));
 console.log(
@@ -50,9 +50,11 @@ console.log(
   )
 );
 
-console.log("abc"["customUpperCase"]());
+let a: any = "abc";
+
+console.log(a["customUpperCase"]());
 console.log(romanToNumber("MMXXII"));
-let s = new Singleton();
+let s: any = new Singleton();
 s["name"] = "qwe";
 let x = new Singleton();
 console.log(s === x);
@@ -61,15 +63,15 @@ console.log(
   stringify(new Node(0, new Node(1, new Node(4, new Node(9, new Node(16))))))
 );
 
-function plus2(arg) {
+function plus2(arg: any) {
   return arg + 2;
 }
 
-function minus2(arg) {
+function minus2(arg: any) {
   return arg - 2;
 }
 
-function divide2(arg) {
+function divide2(arg: any) {
   return arg / 2;
 }
 

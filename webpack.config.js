@@ -15,6 +15,9 @@ module.exports = {
     hot: isDev,
   },
   mode: "development",
+  resolve: {
+    extensions: [".js", ".ts"],
+  },
   entry: "./src/index.ts",
   output: {
     path: path.resolve(__dirname, "dist"),

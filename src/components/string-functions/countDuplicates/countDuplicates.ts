@@ -1,4 +1,4 @@
-const countDuplicates = (text) => {
+const countDuplicates = (text: string): number => {
   return text.length - Array.from(new Set(text.toLowerCase())).length;
 };
 

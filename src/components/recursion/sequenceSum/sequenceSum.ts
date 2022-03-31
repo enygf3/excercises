@@ -1,4 +1,4 @@
-const sequenceSum = (begin, end, step) => {
+const sequenceSum = (begin: number, end: number, step: number): number => {
   if (begin <= end) {
     console.log(begin);
     return sequenceSum(begin + step, end, step);

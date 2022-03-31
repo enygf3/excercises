@@ -1,6 +1,6 @@
-const biggest = (arr) => {
+const biggest = (arr: Array<any>): string => {
   return arr
-    .map((item) => item.toString())
+    .map((item: any) => item.toString())
     .join("")
     .split("")
     .sort()

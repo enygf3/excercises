@@ -1,5 +1,5 @@
-const objectSort = (list, sortBy) => {
-  return list.sort((a, b) => {
+const objectSort = (list: Array<any>, sortBy: any): Array<any> => {
+  return list.sort((a: any, b: any) => {
     if (a[sortBy] < b[sortBy]) {
       return 1;
     }

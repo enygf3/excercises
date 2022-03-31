@@ -1,4 +1,4 @@
-const toMachineName = (name, separator) => {
+const toMachineName = (name: string, separator: string): string => {
   return name.search(/[0-9]/g) !== 0
     ? name
         .split(" ")
