@@ -6,7 +6,7 @@ const alphabetized = (text: string): string => {
       .sort((a: string, b: string): any => a.localeCompare(b))
       .join("");
 
-  return sortText(text);
+  return text ? sortText(text) : "";
 };
 
 export default alphabetized;
