@@ -1,9 +1,8 @@
 const sequenceSum = (begin: number, end: number, step: number): number => {
-  if (begin <= end) {
-    console.log(begin);
+  if (begin < end) {
     return sequenceSum(begin + step, end, step);
   } else {
-    return 0;
+    return begin;
   }
 };
 
