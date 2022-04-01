@@ -1,5 +1,7 @@
-const maxTripletSum = (arr: Array<any>, count: number): number => {
-  return Array.from(new Set(arr.sort().reverse()))
+const maxTripletSum = (arr: Array<any>, count: number = 3): number => {
+  return Array.from(
+    new Set(arr.sort((a: number, b: number) => a - b).reverse())
+  )
     .slice(0, count)
     .reduce(
       (previousValue: number, currentValue: number) =>
