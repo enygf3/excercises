@@ -2,7 +2,7 @@ import sumAverage from "./components/arr-functions/sumAverage/sumAverage";
 import maxTripletSum from "./components/arr-functions/maxTripletSum/maxTripletSum";
 import biggest from "./components/arr-functions/biggest/biggest";
 import pattern from "./components/arr-functions/pattern/pattern";
-import arithmeticSequenceSum from "./components/arr-functions/arithmeticSequenceSum/aritmeticSequenceSum";
+import arithmeticSequenceSum from "./components/arr-functions/arithmeticSequenceSum/arithmeticSequenceSum";
 import toMachineName from "./components/string-functions/toMachineName/toMachineName";
 import alphabetized from "./components/string-functions/alphabetized/alphabetized";
 import countDuplicates from "./components/string-functions/countDuplicates/countDuplicates";
