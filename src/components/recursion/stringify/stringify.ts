@@ -8,11 +8,10 @@ export class Node {
 }
 
 const stringify = (props: any): any => {
-  console.log(props.data);
   if (props.next) {
     return stringify(props.next);
   } else {
-    return null;
+    return props.data;
   }
 };
 
