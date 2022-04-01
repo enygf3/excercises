@@ -35,7 +35,12 @@ console.log(addThree(3));
 console.log(multiplyAll([1, 2, 3], 2));
 console.log(uniqueSum([1, 3, 8, 1, 8]));
 console.log(reduce([1, 2, 3, 4], (acc: any, value: any) => acc * value, 1));
-spread((a: any) => console.log(a), [1, 2, 3]);
+spread(
+  function (a: any) {
+    console.log(this);
+  },
+  [1, 2, 3]
+);
 console.log(zipWith(Math.pow, [10, 10, 10, 10], [0, 1, 2, 3]));
 console.log(sequenceSum(1, 5, 1));
 console.log(
