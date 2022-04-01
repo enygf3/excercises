@@ -1,4 +1,4 @@
-const spread = (callback: Function, arr: Array<any>): Array<any> => {
+const spread = (callback: Function, arr: Array<any>): void => {
   return callback.bind(arr)(arr);
 };
 export default spread;
