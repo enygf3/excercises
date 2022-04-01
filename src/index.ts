@@ -36,7 +36,7 @@ console.log(multiplyAll([1, 2, 3], 2));
 console.log(uniqueSum([1, 3, 8, 1, 8]));
 console.log(reduce([1, 2, 3, 4], (acc: any, value: any) => acc * value, 1));
 spread(
-  function (a: any) {
+  function (this: any, a: any) {
     console.log(this);
   },
   [1, 2, 3]
